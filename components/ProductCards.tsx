@@ -32,13 +32,13 @@ export default function ProductCards() {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.2 }
+      transition: { staggerChildren: 0.05 }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    hidden: { opacity: 0, y: 10 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } }
   };
 
   return (
@@ -59,10 +59,10 @@ export default function ProductCards() {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "100px" }}
         >
           {cards.map((card, idx) => (
-            <motion.div key={idx} variants={itemVariants} className="h-full">
+            <motion.div key={idx} variants={itemVariants} className="h-full will-change-transform">
               <ProductCard {...card} />
             </motion.div>
           ))}

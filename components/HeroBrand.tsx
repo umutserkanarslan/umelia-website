@@ -19,8 +19,8 @@ export default function HeroBrand() {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative flex justify-center"
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          className="relative flex justify-center will-change-transform"
         >
           <div className="relative w-[280px] h-[280px] md:w-[450px] md:h-[450px] lg:w-[55vh] lg:h-[55vh] max-w-[650px] max-h-[650px]">
             <Image
@@ -35,10 +35,10 @@ export default function HeroBrand() {
 
         {/* Brand Name */}
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-[48px] font-libre-baskerville font-bold text-[44px] md:text-[64px] lg:text-[72px] text-[#ecd6ad] uppercase tracking-[0.35em] text-center ml-[0.35em]"
+          transition={{ duration: 0.3, delay: 0.05 }}
+          className="mt-[48px] font-libre-baskerville font-bold text-[44px] md:text-[64px] lg:text-[72px] text-[#ecd6ad] uppercase tracking-[0.35em] text-center ml-[0.35em] will-change-transform"
         >
           UMELIA
         </motion.h1>
@@ -47,8 +47,8 @@ export default function HeroBrand() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-[16px] font-libre-baskerville font-normal text-[13px] md:text-[16px] text-[#ecd6ad] uppercase tracking-[0.25em] text-center ml-[0.25em]"
+          transition={{ duration: 0.3, delay: 0.1 }}
+          className="mt-[16px] font-libre-baskerville font-normal text-[13px] md:text-[16px] text-[#ecd6ad] uppercase tracking-[0.25em] text-center ml-[0.25em] will-change-transform"
         >
           AUTOMATE. OPTIMIZE. ELEVATE.
         </motion.p>
@@ -58,8 +58,8 @@ export default function HeroBrand() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        className="absolute bottom-[32px] left-1/2 -translate-x-1/2 flex flex-col items-center gap-[24px] cursor-pointer group z-20"
+        transition={{ duration: 0.3, delay: 0.15 }}
+        className="absolute bottom-[32px] left-1/2 -translate-x-1/2 flex flex-col items-center gap-[24px] cursor-pointer group z-20 will-change-transform"
         onClick={() => {
           document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' });
         }}
