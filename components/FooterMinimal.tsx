@@ -7,7 +7,7 @@ export default function FooterMinimal() {
         UMELIA
       </div>
       <div className="text-[#4A5568] text-[13px] font-inter mb-1">
-        © 2025 UMELIA — Tüm hakları saklıdır.
+        © 2026 UMELIA — Tüm hakları saklıdır.
       </div>
       <div className="text-[#4A5568] text-[13px] font-inter">
         Bodrum, Türkiye

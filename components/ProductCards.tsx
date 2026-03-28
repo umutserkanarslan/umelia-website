@@ -10,21 +10,21 @@ export default function ProductCards() {
       title: "VIP Otel Asistanı",
       description: "Misafiriniz hangi dilde yazarsa yazsın, kendi dilinde yanıt alır. Talepler anında hizmet ekibine ulaşır.",
       pills: ["7/24 Aktif", "Çoklu Dil Desteği", "AI Destekli", "Anlık İş Emri"],
-      link: "/otel-asistani"
+      link: "/otel"
     },
     {
       icon: <CalendarDays className="w-[32px] h-[32px]" />,
       title: "Rezervasyon Asistanı",
       description: "Müşteriniz sadece WhatsApp'tan yazsın, gerisini AI halleder. Rezervasyon alınır, size anında bildirim gelir.",
       pills: ["Otomatik Rezervasyon", "Çoklu Dil Desteği", "Konuşma Hafızası", "Anlık Bildirim"],
-      link: "/rezervasyon-botu"
+      link: "/rezervasyon"
     },
     {
       icon: <QrCode className="w-[32px] h-[32px]" />,
       title: "QR Kod Sipariş Sistemi",
       description: "Müşteri masadaki QR kodu tarıyor, menüden sipariş veriyor, mutfak anında bildirimi alıyor — Garson bekleme yok, hata yok.",
       pills: ["Garson Bekleme Yok", "Dinamik Menü", "Anlık Mutfak Bildirimi", "Günlük Ciro Raporu"],
-      link: "/qr-siparis"
+      link: "/restoran"
     }
   ];
 
@@ -38,7 +38,7 @@ export default function ProductCards() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" as const } }
   };
 
   return (
